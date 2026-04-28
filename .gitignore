@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Email-Rohdaten — Inspirationsquelle für Übungen, nicht für öffentliches Repo
+*.eml
