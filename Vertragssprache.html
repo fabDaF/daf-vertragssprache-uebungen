@@ -117,7 +117,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
 .schreib-aufgabe-karte.gesendet .schreib-aufgabe-titel { color: #33691e; }
 .schreib-aufgabe-frage { color: #555; font-size: 0.92em; line-height: 1.5; margin: 8px 0 8px 0; }
 .schreib-beispiel { font-size: 0.85em; color: #888; font-style: italic; margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #e0e4ff; }
-.schreib-mini-textarea { width: 100%; min-height: 70px; border: 1.5px solid #c5cff5; border-radius: 8px; padding: 10px 12px; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 0.95em; line-height: 1.6; color: #1a1a1a; resize: vertical; outline: none; transition: border-color 0.2s; background: #fefefe; }
+.schreib-mini-textarea { width: 100%; min-height: 350px; border: 1.5px solid #c5cff5; border-radius: 8px; padding: 10px 12px; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 0.95em; line-height: 1.6; color: #1a1a1a; resize: vertical; outline: none; transition: border-color 0.2s; background: #fefefe; }
 .schreib-mini-textarea:focus { border-color: #667eea; box-shadow: 0 0 0 2px rgba(102,126,234,0.15); }
 .schreib-mini-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 8px; flex-wrap: wrap; gap: 10px; }
 .schreib-mini-meta { font-size: 0.82em; color: #888; }
@@ -329,9 +329,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
 
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">1</span><span class="schreib-aufgabe-titel">Eine AVB-Klausel in eigenen Worten</span>
-        <div class="schreib-aufgabe-frage">Wähle eine Klausel aus dem Lesetext (AVB der Warenkreditversicherung) und erkläre sie in zwei bis drei Sätzen so, wie du sie einem Kollegen ohne Versicherungserfahrung erklären würdest. Was schützt sie? Wen verpflichtet sie? (50–70 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „Die Klausel zur Schadensanzeige verpflichtet den Versicherungsnehmer, einen drohenden Forderungsausfall innerhalb von sieben Tagen schriftlich zu melden. Damit erhält der Versicherer Zeit, den Schaden zu prüfen und gegebenenfalls Abwehrmaßnahmen einzuleiten. Versäumt der Versicherte diese Frist, kann der Versicherungsschutz ganz entfallen — die Klausel ist also kein bürokratisches Detail, sondern eine echte Obliegenheit.""</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="1" data-titel="Eine AVB-Klausel in eigenen Worten"></textarea>
+        <div class="schreib-aufgabe-frage">Wähle eine Klausel aus dem Lesetext (AVB der Warenkreditversicherung) und erkläre sie in zwei bis drei Sätzen so, wie du sie einem Kollegen ohne Versicherungserfahrung erklären würdest. Was schützt sie? Wen verpflichtet sie? (50–70 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="1" data-titel="Eine AVB-Klausel in eigenen Worten"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-1">0</strong> <span class="schreib-mini-status" id="sw-status-1"></span></span>
           <button class="schreib-mini-btn" id="sw-send-1" onclick="schreibSendenEinzeln(1)">📨 An Frank senden</button>
@@ -339,9 +337,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
       </div>
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">2</span><span class="schreib-aufgabe-titel">Verbalsatz in Nominalstil umwandeln</span>
-        <div class="schreib-aufgabe-frage">Wandle den folgenden Verbalsatz in einen typischen Vertragssatz im Nominalstil um: „Der Versicherungsnehmer muss den Schaden unverzüglich anzeigen, sobald er von dem Forderungsausfall erfährt.“ Achte auf Funktionsverbgefüge und Präpositionalkonstruktionen. (40–60 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „Die unverzügliche Anzeige des Schadens nach Kenntnisnahme des Forderungsausfalls obliegt dem Versicherungsnehmer. Die Anzeige erfolgt schriftlich innerhalb der vertraglich festgelegten Frist und enthält alle für die Schadensprüfung erforderlichen Angaben.""</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="2" data-titel="Verbalsatz in Nominalstil umwandeln"></textarea>
+        <div class="schreib-aufgabe-frage">Wandle den folgenden Verbalsatz in einen typischen Vertragssatz im Nominalstil um: „Der Versicherungsnehmer muss den Schaden unverzüglich anzeigen, sobald er von dem Forderungsausfall erfährt.“ Achte auf Funktionsverbgefüge und Präpositionalkonstruktionen. (40–60 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="2" data-titel="Verbalsatz in Nominalstil umwandeln"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-2">0</strong> <span class="schreib-mini-status" id="sw-status-2"></span></span>
           <button class="schreib-mini-btn" id="sw-send-2" onclick="schreibSendenEinzeln(2)">📨 An Frank senden</button>
@@ -349,9 +345,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
       </div>
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">3</span><span class="schreib-aufgabe-titel">Geschäftliche E-Mail formulieren</span>
-        <div class="schreib-aufgabe-frage">Schreibe eine kurze, formelle E-Mail an die Versicherung, in der du einen Forderungsausfall meldest. Halte den Geschäftsdeutsch-Ton ein und nenne mindestens: Vertragsnummer, Datum des Ausfalls, Gegenstand der Forderung, Höhe. (60–80 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „Sehr geehrte Damen und Herren, hiermit teile ich Ihnen mit, dass am 15. März 2026 bei unserem Kunden XY GmbH ein Forderungsausfall in Höhe von 12.450 € eingetreten ist. Die Vertragsnummer lautet WKV-2024-0815. Beigefügt finden Sie die Originalrechnung und die Mahnschreiben. Ich bitte um zeitnahe Bearbeitung. Mit freundlichen Grüßen, M. Müller""</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="3" data-titel="Geschäftliche E-Mail formulieren"></textarea>
+        <div class="schreib-aufgabe-frage">Schreibe eine kurze, formelle E-Mail an die Versicherung, in der du einen Forderungsausfall meldest. Halte den Geschäftsdeutsch-Ton ein und nenne mindestens: Vertragsnummer, Datum des Ausfalls, Gegenstand der Forderung, Höhe. (60–80 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="3" data-titel="Geschäftliche E-Mail formulieren"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-3">0</strong> <span class="schreib-mini-status" id="sw-status-3"></span></span>
           <button class="schreib-mini-btn" id="sw-send-3" onclick="schreibSendenEinzeln(3)">📨 An Frank senden</button>
@@ -359,9 +353,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
       </div>
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">4</span><span class="schreib-aufgabe-titel">Mikro-Stellungnahme: Pro/Kontra WKV</span>
-        <div class="schreib-aufgabe-frage">Argumentiere kurz: Sollte ein mittelständisches Unternehmen mit signifikantem Auslandsgeschäft eine Warenkreditversicherung abschließen? Nenne zwei Pro- und ein Kontra-Argument und schließe mit deiner Empfehlung. (60–80 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „Pro spricht erstens, dass die WKV bei Insolvenz oder Zahlungsverzug ausländischer Schuldner einspringt — gerade in volatilen Märkten ein Existenz-Schutz. Zweitens verbessert sie die Bonität des eigenen Unternehmens, weil Banken sie als Sicherheit anerkennen. Kontra: Die laufenden Prämien belasten die Marge auch dann, wenn keine Schäden eintreten. Empfehlung: Bei mehr als 20 % Auslandsumsatz lohnt sich die WKV in der Regel.""</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="4" data-titel="Mikro-Stellungnahme: Pro/Kontra WKV"></textarea>
+        <div class="schreib-aufgabe-frage">Argumentiere kurz: Sollte ein mittelständisches Unternehmen mit signifikantem Auslandsgeschäft eine Warenkreditversicherung abschließen? Nenne zwei Pro- und ein Kontra-Argument und schließe mit deiner Empfehlung. (60–80 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="4" data-titel="Mikro-Stellungnahme: Pro/Kontra WKV"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-4">0</strong> <span class="schreib-mini-status" id="sw-status-4"></span></span>
           <button class="schreib-mini-btn" id="sw-send-4" onclick="schreibSendenEinzeln(4)">📨 An Frank senden</button>
@@ -369,9 +361,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
       </div>
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">5</span><span class="schreib-aufgabe-titel">Beratungsdialog (Mini-Dialog)</span>
-        <div class="schreib-aufgabe-frage">Schreibe einen kurzen Dialog zwischen einem Geschäftsführer und einem Versicherungsmakler. Zwei Fragen vom GF, zwei Antworten vom Makler — Thema: Deckungsumfang der WKV. (50–70 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „GF: Welche Schäden sind durch die WKV gedeckt? Makler: Forderungsausfälle aus genehmigten Geschäften — Insolvenz, anhaltender Zahlungsverzug, in einigen Tarifen auch politische Risiken. GF: Was ist bei nicht genehmigten Geschäften? Makler: Diese sind ausgeschlossen. Genau deshalb empfehle ich eine Pauschal-Deckungslinie für Ihren A-Kunden-Stamm — das spart die Einzelprüfung.""</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="5" data-titel="Beratungsdialog (Mini-Dialog)"></textarea>
+        <div class="schreib-aufgabe-frage">Schreibe einen kurzen Dialog zwischen einem Geschäftsführer und einem Versicherungsmakler. Zwei Fragen vom GF, zwei Antworten vom Makler — Thema: Deckungsumfang der WKV. (50–70 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="5" data-titel="Beratungsdialog (Mini-Dialog)"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-5">0</strong> <span class="schreib-mini-status" id="sw-status-5"></span></span>
           <button class="schreib-mini-btn" id="sw-send-5" onclick="schreibSendenEinzeln(5)">📨 An Frank senden</button>
@@ -388,7 +378,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
 
 <div class="author-footer">
     <span class="author-name">&copy; Frank Burkert</span> &middot; DaF-Materialien &middot;
-    <a href="mailto:unterricht@fabdaf.onmicrosoft.com">unterricht@fabdaf.onmicrosoft.com</a>
+    <a href="mailto:unterricht@frankburkert-daf.de">unterricht@frankburkert-daf.de</a>
 </div>
 
 </div><!-- /container -->
@@ -863,7 +853,7 @@ var SCHREIB_KEY_PREFIX    = 'schreibwerkstatt_B2_V01R_';
 var SCHREIB_SENT_PREFIX   = 'schreibwerkstatt_B2_V01R_sent_';
 var FORMSUBMIT_ENDPOINT  = 'https://api.web3forms.com/submit';
 var FORMSUBMIT_ACCESS_KEY = 'e96ea83f-67e2-4fff-81df-76fee86a09ff';
-var FORMSUBMIT_MAILTO    = 'unterricht@fabdaf.onmicrosoft.com';
+var FORMSUBMIT_MAILTO    = 'unterricht@frankburkert-daf.de';
 var SCHREIB_LEKTION       = 'B2 – Lektion V01R · Vertragssprache · AVB Warenkreditversicherung';
 var SCHREIB_MIN_CHARS     = 14;
 

@@ -172,7 +172,7 @@ body { font-family:'Segoe UI',system-ui,-apple-system,sans-serif; background:lin
 .schreib-aufgabe-karte.gesendet .schreib-aufgabe-titel { color: #33691e; }
 .schreib-aufgabe-frage { color: #555; font-size: 0.92em; line-height: 1.5; margin: 8px 0 8px 0; }
 .schreib-beispiel { font-size: 0.85em; color: #888; font-style: italic; margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #e0e4ff; }
-.schreib-mini-textarea { width: 100%; min-height: 70px; border: 1.5px solid #c5cff5; border-radius: 8px; padding: 10px 12px; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 0.95em; line-height: 1.6; color: #1a1a1a; resize: vertical; outline: none; transition: border-color 0.2s; background: #fefefe; }
+.schreib-mini-textarea { width: 100%; min-height: 350px; border: 1.5px solid #c5cff5; border-radius: 8px; padding: 10px 12px; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 0.95em; line-height: 1.6; color: #1a1a1a; resize: vertical; outline: none; transition: border-color 0.2s; background: #fefefe; }
 .schreib-mini-textarea:focus { border-color: #667eea; box-shadow: 0 0 0 2px rgba(102,126,234,0.15); }
 .schreib-mini-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 8px; flex-wrap: wrap; gap: 10px; }
 .schreib-mini-meta { font-size: 0.82em; color: #888; }
@@ -457,9 +457,7 @@ body { font-family:'Segoe UI',system-ui,-apple-system,sans-serif; background:lin
 
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">1</span><span class="schreib-aufgabe-titel">Drei Komposita erklären</span>
-        <div class="schreib-aufgabe-frage">Wähle drei Komposita aus dem Lesetext (z. B. „Versicherungsnehmer“, „Schadensanzeige“, „Forderungsausfall“) und erkläre jedes in einem Satz: Was sind die zwei Wortteile, und was bedeutet das Gesamtwort? (60–80 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „Versicherungsnehmer = Versicherung + Nehmer; jemand, der eine Versicherung abschließt. Schadensanzeige = Schaden + Anzeige; die formelle Meldung eines Schadens beim Versicherer. Forderungsausfall = Forderung + Ausfall; der Verlust einer offenen Geldforderung, weil der Schuldner nicht zahlt.""</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="1" data-titel="Drei Komposita erklären"></textarea>
+        <div class="schreib-aufgabe-frage">Wähle drei Komposita aus dem Lesetext (z. B. „Versicherungsnehmer“, „Schadensanzeige“, „Forderungsausfall“) und erkläre jedes in einem Satz: Was sind die zwei Wortteile, und was bedeutet das Gesamtwort? (60–80 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="1" data-titel="Drei Komposita erklären"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-1">0</strong> <span class="schreib-mini-status" id="sw-status-1"></span></span>
           <button class="schreib-mini-btn" id="sw-send-1" onclick="schreibSendenEinzeln(1)">📨 An Frank senden</button>
@@ -467,9 +465,7 @@ body { font-family:'Segoe UI',system-ui,-apple-system,sans-serif; background:lin
       </div>
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">2</span><span class="schreib-aufgabe-titel">Drei Funktionsverbgefüge anwenden</span>
-        <div class="schreib-aufgabe-frage">Schreibe drei Sätze, in denen du je ein Funktionsverbgefüge sinnvoll einsetzt. Beispiele: „in Anspruch nehmen“, „zur Kenntnis bringen“, „Antrag stellen“. (60–80 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „Wir nehmen Ihre Dienste gern in Anspruch. Hiermit bringen wir zu Ihrer Kenntnis, dass die Lieferung verzögert ist. Der Versicherte muss innerhalb der Frist einen Antrag stellen, sonst entfällt der Anspruch.""</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="2" data-titel="Drei Funktionsverbgefüge anwenden"></textarea>
+        <div class="schreib-aufgabe-frage">Schreibe drei Sätze, in denen du je ein Funktionsverbgefüge sinnvoll einsetzt. Beispiele: „in Anspruch nehmen“, „zur Kenntnis bringen“, „Antrag stellen“. (60–80 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="2" data-titel="Drei Funktionsverbgefüge anwenden"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-2">0</strong> <span class="schreib-mini-status" id="sw-status-2"></span></span>
           <button class="schreib-mini-btn" id="sw-send-2" onclick="schreibSendenEinzeln(2)">📨 An Frank senden</button>
@@ -477,9 +473,7 @@ body { font-family:'Segoe UI',system-ui,-apple-system,sans-serif; background:lin
       </div>
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">3</span><span class="schreib-aufgabe-titel">Verbalsatz in Nominalstil umwandeln</span>
-        <div class="schreib-aufgabe-frage">Wandle den Satz „Wenn der Versicherungsnehmer den Schaden verspätet meldet, kann der Versicherer die Zahlung verweigern“ in einen typischen Vertragssatz im Nominalstil. (40–60 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „Bei verspäteter Schadensmeldung durch den Versicherungsnehmer ist der Versicherer zur Verweigerung der Zahlung berechtigt.“"</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="3" data-titel="Verbalsatz in Nominalstil umwandeln"></textarea>
+        <div class="schreib-aufgabe-frage">Wandle den Satz „Wenn der Versicherungsnehmer den Schaden verspätet meldet, kann der Versicherer die Zahlung verweigern“ in einen typischen Vertragssatz im Nominalstil. (40–60 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="3" data-titel="Verbalsatz in Nominalstil umwandeln"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-3">0</strong> <span class="schreib-mini-status" id="sw-status-3"></span></span>
           <button class="schreib-mini-btn" id="sw-send-3" onclick="schreibSendenEinzeln(3)">📨 An Frank senden</button>
@@ -487,9 +481,7 @@ body { font-family:'Segoe UI',system-ui,-apple-system,sans-serif; background:lin
       </div>
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">4</span><span class="schreib-aufgabe-titel">Fachbegriff definieren</span>
-        <div class="schreib-aufgabe-frage">Wähle einen juristischen Fachbegriff aus dem Lesetext und schreibe eine eigene Definition für einen Laien. (50–70 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „Obliegenheit ist eine vertragliche Pflicht des Versicherten, deren Verletzung nicht direkt einklagbar ist, aber den Versicherungsschutz mindert oder ganz aufhebt. Beispiel: Wer einen Schaden verspätet meldet, verletzt eine Obliegenheit — der Versicherer kann dann die Leistung kürzen oder verweigern.""</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="4" data-titel="Fachbegriff definieren"></textarea>
+        <div class="schreib-aufgabe-frage">Wähle einen juristischen Fachbegriff aus dem Lesetext und schreibe eine eigene Definition für einen Laien. (50–70 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="4" data-titel="Fachbegriff definieren"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-4">0</strong> <span class="schreib-mini-status" id="sw-status-4"></span></span>
           <button class="schreib-mini-btn" id="sw-send-4" onclick="schreibSendenEinzeln(4)">📨 An Frank senden</button>
@@ -497,9 +489,7 @@ body { font-family:'Segoe UI',system-ui,-apple-system,sans-serif; background:lin
       </div>
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">5</span><span class="schreib-aufgabe-titel">Mini-Dialog mit Funktionsverbgefügen</span>
-        <div class="schreib-aufgabe-frage">Schreibe einen kurzen Dialog (2 Fragen + 2 Antworten), in dem du mindestens drei verschiedene Funktionsverbgefüge verwendest. (50–70 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „A: Können wir Ihre Beratung in Anspruch nehmen? B: Selbstverständlich. Bringen Sie uns die Unterlagen zur Kenntnis, dann nehmen wir Stellung. A: Müssen wir einen Antrag stellen? B: Nein, eine formlose Anfrage genügt — wir setzen Sie dann in Verbindung mit unserem Fachberater.""</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="5" data-titel="Mini-Dialog mit Funktionsverbgefügen"></textarea>
+        <div class="schreib-aufgabe-frage">Schreibe einen kurzen Dialog (2 Fragen + 2 Antworten), in dem du mindestens drei verschiedene Funktionsverbgefüge verwendest. (50–70 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="5" data-titel="Mini-Dialog mit Funktionsverbgefügen"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-5">0</strong> <span class="schreib-mini-status" id="sw-status-5"></span></span>
           <button class="schreib-mini-btn" id="sw-send-5" onclick="schreibSendenEinzeln(5)">📨 An Frank senden</button>
@@ -536,7 +526,7 @@ body { font-family:'Segoe UI',system-ui,-apple-system,sans-serif; background:lin
   <!-- FOOTER (innerhalb Container) -->
   <div class="author-footer">
     <span class="author-name">&copy; Frank Burkert</span> &middot; DaF-Materialien &middot;
-    <a href="mailto:unterricht@fabdaf.onmicrosoft.com">unterricht@fabdaf.onmicrosoft.com</a>
+    <a href="mailto:unterricht@frankburkert-daf.de">unterricht@frankburkert-daf.de</a>
   </div>
 
 </div><!-- /container -->
@@ -1295,7 +1285,7 @@ var SCHREIB_KEY_PREFIX    = 'schreibwerkstatt_B2_V03G_';
 var SCHREIB_SENT_PREFIX   = 'schreibwerkstatt_B2_V03G_sent_';
 var FORMSUBMIT_ENDPOINT  = 'https://api.web3forms.com/submit';
 var FORMSUBMIT_ACCESS_KEY = 'e96ea83f-67e2-4fff-81df-76fee86a09ff';
-var FORMSUBMIT_MAILTO    = 'unterricht@fabdaf.onmicrosoft.com';
+var FORMSUBMIT_MAILTO    = 'unterricht@frankburkert-daf.de';
 var SCHREIB_LEKTION       = 'B2 – Lektion V03G · Komposita & Funktionsverbgefüge · Nominalisierung';
 var SCHREIB_MIN_CHARS     = 14;
 

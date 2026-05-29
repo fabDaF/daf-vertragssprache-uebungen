@@ -123,7 +123,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
 .schreib-aufgabe-karte.gesendet .schreib-aufgabe-titel { color: #33691e; }
 .schreib-aufgabe-frage { color: #555; font-size: 0.92em; line-height: 1.5; margin: 8px 0 8px 0; }
 .schreib-beispiel { font-size: 0.85em; color: #888; font-style: italic; margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #e0e4ff; }
-.schreib-mini-textarea { width: 100%; min-height: 70px; border: 1.5px solid #c5cff5; border-radius: 8px; padding: 10px 12px; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 0.95em; line-height: 1.6; color: #1a1a1a; resize: vertical; outline: none; transition: border-color 0.2s; background: #fefefe; }
+.schreib-mini-textarea { width: 100%; min-height: 350px; border: 1.5px solid #c5cff5; border-radius: 8px; padding: 10px 12px; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 0.95em; line-height: 1.6; color: #1a1a1a; resize: vertical; outline: none; transition: border-color 0.2s; background: #fefefe; }
 .schreib-mini-textarea:focus { border-color: #667eea; box-shadow: 0 0 0 2px rgba(102,126,234,0.15); }
 .schreib-mini-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 8px; flex-wrap: wrap; gap: 10px; }
 .schreib-mini-meta { font-size: 0.82em; color: #888; }
@@ -379,9 +379,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
 
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">1</span><span class="schreib-aufgabe-titel">Eine interne Anfrage formulieren</span>
-        <div class="schreib-aufgabe-frage">Schreibe eine kurze, formelle E-Mail an einen Kollegen aus der Buchhaltung. Bitte um eine Auskunft zum Stand einer Rechnung. Achte auf Anrede, klare Bitte und Schlussformel. (50–70 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „Sehr geehrter Herr Bauer, ich bitte um eine kurze Rückmeldung zum Bearbeitungsstand der Rechnung Nr. 2026-1142, die wir am 12. März eingereicht haben. Eine Antwort bis Donnerstag wäre für unsere Quartalsabrechnung hilfreich. Mit freundlichen Grüßen, M. Müller""</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="1" data-titel="Eine interne Anfrage formulieren"></textarea>
+        <div class="schreib-aufgabe-frage">Schreibe eine kurze, formelle E-Mail an einen Kollegen aus der Buchhaltung. Bitte um eine Auskunft zum Stand einer Rechnung. Achte auf Anrede, klare Bitte und Schlussformel. (50–70 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="1" data-titel="Eine interne Anfrage formulieren"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-1">0</strong> <span class="schreib-mini-status" id="sw-status-1"></span></span>
           <button class="schreib-mini-btn" id="sw-send-1" onclick="schreibSendenEinzeln(1)">📨 An Frank senden</button>
@@ -389,9 +387,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
       </div>
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">2</span><span class="schreib-aufgabe-titel">Internes Angebot in drei Sätzen</span>
-        <div class="schreib-aufgabe-frage">Beschreibe in drei klaren Sätzen, was ein internes Angebot ist und wie es sich von einem externen unterscheidet. (50–70 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „Ein internes Angebot richtet sich an Kollegen oder andere Abteilungen desselben Unternehmens. Im Gegensatz zum externen Angebot fehlen formale Elemente wie AGB oder USt-Hinweise. Es dient der Abstimmung über Leistungen, Termine und interne Verrechnung — verbindlich, aber ohne juristische Vertragswirkung nach außen.""</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="2" data-titel="Internes Angebot in drei Sätzen"></textarea>
+        <div class="schreib-aufgabe-frage">Beschreibe in drei klaren Sätzen, was ein internes Angebot ist und wie es sich von einem externen unterscheidet. (50–70 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="2" data-titel="Internes Angebot in drei Sätzen"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-2">0</strong> <span class="schreib-mini-status" id="sw-status-2"></span></span>
           <button class="schreib-mini-btn" id="sw-send-2" onclick="schreibSendenEinzeln(2)">📨 An Frank senden</button>
@@ -399,9 +395,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
       </div>
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">3</span><span class="schreib-aufgabe-titel">Höflichkeitsformeln einsetzen</span>
-        <div class="schreib-aufgabe-frage">Schreibe drei verschiedene Schluss-Formulierungen für eine geschäftliche E-Mail: eine neutral, eine besonders höflich, eine kollegial. (50–70 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „Neutral: Mit freundlichen Grüßen — Sehr höflich: Mit den besten Grüßen und vielen Dank für Ihre Mühe — Kollegial: Beste Grüße und einen guten Wochenstart!“"</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="3" data-titel="Höflichkeitsformeln einsetzen"></textarea>
+        <div class="schreib-aufgabe-frage">Schreibe drei verschiedene Schluss-Formulierungen für eine geschäftliche E-Mail: eine neutral, eine besonders höflich, eine kollegial. (50–70 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="3" data-titel="Höflichkeitsformeln einsetzen"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-3">0</strong> <span class="schreib-mini-status" id="sw-status-3"></span></span>
           <button class="schreib-mini-btn" id="sw-send-3" onclick="schreibSendenEinzeln(3)">📨 An Frank senden</button>
@@ -409,9 +403,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
       </div>
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">4</span><span class="schreib-aufgabe-titel">E-Mail vs. Geschäftsbrief</span>
-        <div class="schreib-aufgabe-frage">Argumentiere kurz: Wann eine formelle E-Mail, wann lieber den Geschäftsbrief? Nenne zwei Pro-E-Mail- und ein Pro-Brief-Argument. (50–70 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „Pro E-Mail spricht erstens die Geschwindigkeit — eine Antwort ist binnen Stunden möglich. Zweitens die einfache Archivierung. Pro Brief spricht: bei rechtlich relevanten Mitteilungen wie Kündigung oder Mahnung ist die nachweisbare Zustellung per Einschreiben juristisch eindeutiger als jede E-Mail.""</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="4" data-titel="E-Mail vs. Geschäftsbrief"></textarea>
+        <div class="schreib-aufgabe-frage">Argumentiere kurz: Wann eine formelle E-Mail, wann lieber den Geschäftsbrief? Nenne zwei Pro-E-Mail- und ein Pro-Brief-Argument. (50–70 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="4" data-titel="E-Mail vs. Geschäftsbrief"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-4">0</strong> <span class="schreib-mini-status" id="sw-status-4"></span></span>
           <button class="schreib-mini-btn" id="sw-send-4" onclick="schreibSendenEinzeln(4)">📨 An Frank senden</button>
@@ -419,9 +411,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
       </div>
       <div class="schreib-aufgabe-karte">
         <span class="schreib-aufgabe-nr">5</span><span class="schreib-aufgabe-titel">Mini-Dialog: Rückfrage zum Angebot</span>
-        <div class="schreib-aufgabe-frage">Schreibe einen kurzen Dialog: zwei Fragen vom Empfänger des Angebots, zwei klärende Antworten vom Anbieter. (50–70 Wörter)</div>
-        <div class="schreib-beispiel">Beispiel: „Beispiel: „Empfänger: Ist der Liefertermin 15. Mai verbindlich? Anbieter: Verbindlich, sofern der Auftrag bis 1. Mai eingeht — andernfalls verschiebt sich die Lieferung um zwei Wochen. Empfänger: Sind Versandkosten enthalten? Anbieter: Innerhalb Deutschlands ja, ins Ausland berechnen wir nach Gewicht.""</div>
-        <textarea class="schreib-mini-textarea" data-aufgabe="5" data-titel="Mini-Dialog: Rückfrage zum Angebot"></textarea>
+        <div class="schreib-aufgabe-frage">Schreibe einen kurzen Dialog: zwei Fragen vom Empfänger des Angebots, zwei klärende Antworten vom Anbieter. (50–70 Wörter)</div>        <textarea class="schreib-mini-textarea" data-aufgabe="5" data-titel="Mini-Dialog: Rückfrage zum Angebot"></textarea>
         <div class="schreib-mini-footer">
           <span class="schreib-mini-meta">Wörter: <strong class="wc-5">0</strong> <span class="schreib-mini-status" id="sw-status-5"></span></span>
           <button class="schreib-mini-btn" id="sw-send-5" onclick="schreibSendenEinzeln(5)">📨 An Frank senden</button>
@@ -438,7 +428,7 @@ body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background
 
 <div class="author-footer">
     <span class="author-name">&copy; Frank Burkert</span> &middot; DaF-Materialien &middot;
-    <a href="mailto:unterricht@fabdaf.onmicrosoft.com">unterricht@fabdaf.onmicrosoft.com</a>
+    <a href="mailto:unterricht@frankburkert-daf.de">unterricht@frankburkert-daf.de</a>
 </div>
 
 </div><!-- /container -->
@@ -892,7 +882,7 @@ var SCHREIB_KEY_PREFIX    = 'schreibwerkstatt_B2_V02X_';
 var SCHREIB_SENT_PREFIX   = 'schreibwerkstatt_B2_V02X_sent_';
 var FORMSUBMIT_ENDPOINT  = 'https://api.web3forms.com/submit';
 var FORMSUBMIT_ACCESS_KEY = 'e96ea83f-67e2-4fff-81df-76fee86a09ff';
-var FORMSUBMIT_MAILTO    = 'unterricht@fabdaf.onmicrosoft.com';
+var FORMSUBMIT_MAILTO    = 'unterricht@frankburkert-daf.de';
 var SCHREIB_LEKTION       = 'B2 – Lektion V02X · Geschäfts-Email · Internes Angebot';
 var SCHREIB_MIN_CHARS     = 14;
 
